@@ -24,8 +24,8 @@ Vue.use(VueIsVisible)
 import { VueIsVisible } from 'vue-is-visible'
 export default {
   components: {
-    VueIsVisible,
-  },
+    VueIsVisible
+  }
 }
 ```
 
