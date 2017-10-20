@@ -14,14 +14,14 @@ $ npm install vue-is-visible
 
 ```
 import Vue from 'vue'
-import VueIsVisible from 'vue-is-visible'
+import { VueIsVisible } from 'vue-is-visible'
 Vue.use(VueIsVisible)
 ```
 
 ### Local usage
 
 ```
-import VueIsVisible from 'vue-is-visible'
+import { VueIsVisible } from 'vue-is-visible'
 export default {
   components: {
     VueIsVisible,
@@ -52,7 +52,7 @@ The name of the event to be emitted when the component is visible within the bro
 
 ```
 <script>
-  import VueIsVisible from 'vue-is-visible'
+  import { VueIsVisible } from 'vue-is-visible'
   export default {
     components: {
       VueIsVisible
