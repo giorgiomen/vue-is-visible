@@ -33,9 +33,9 @@ export default {
 ### API
 
 
-#### `event` - number
+#### `event` - string
 
-The name of the event to be emitted when the component is visible within the browsers viewport.
+The name of the event to be emitted when the component is visible.
 
 
 ### Example
