@@ -15,7 +15,6 @@ $ npm install vue-is-visible
 ```
 import Vue from 'vue'
 import VueIsVisible from 'vue-is-visible'
-
 Vue.use(VueIsVisible)
 ```
 
@@ -23,7 +22,6 @@ Vue.use(VueIsVisible)
 
 ```
 import VueIsVisible from 'vue-is-visible'
-
 export default {
   components: {
     VueIsVisible,
@@ -39,3 +37,36 @@ export default {
 
 The name of the event to be emitted when the component is visible within the browsers viewport.
 
+
+### Example
+
+```
+<template>
+  <vue-is-visible event="isVisible" v-on:isVisible="setBackgroundColor">
+    <div v-bind:style="{backgroundColor}">
+      Hello
+    </div>
+  </vue-is-visible>
+</template>
+```
+
+```
+<script>
+  import VueIsVisible from 'vue-is-visible'
+  export default {
+    components: {
+      VueIsVisible
+    },
+    data() {
+      return {
+        backgroundColor: 'white'
+      }
+    },
+    methods: {
+      setBackgroundColor() {
+        this.backgroundColor = 'blue'
+      }
+    }
+  }
+</script>
+```
