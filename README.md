@@ -7,7 +7,7 @@ This is a Vue component that emits an event when the component is visible within
 ### NPM
 
 ```
-@ npm install vue-is-visible
+$ npm install vue-is-visible
 ```
 
 ### Global usage
