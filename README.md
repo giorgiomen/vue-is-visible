@@ -43,7 +43,7 @@ The name of the event to be emitted when the component is visible.
 ```
 <template>
   <vue-is-visible event="isVisible" v-on:isVisible="setBackgroundColor">
-    <div v-bind:style="{backgroundColor}">
+    <div v-bind:style="{backgroundColor, color: 'white'}">
       Hello
     </div>
   </vue-is-visible>
@@ -59,7 +59,7 @@ The name of the event to be emitted when the component is visible.
     },
     data() {
       return {
-        backgroundColor: 'white'
+        backgroundColor: 'green'
       }
     },
     methods: {
